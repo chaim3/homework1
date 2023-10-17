@@ -9,6 +9,7 @@ public class bmi{
         System.out.println("what is your height in meters?: ");
         double h = j.nextDouble();
         System.out.println("how much do you weigh in kg?: ");
+        
         double w = j.nextDouble();
         double BMI = w/(h*h);
         String f = decimalFormat.format(BMI);

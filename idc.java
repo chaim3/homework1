@@ -30,6 +30,4 @@ public class idc{
 
         }
         
-        System.out.println("The result is: " + result);
-    }
-}
+        System.out.println("The res
