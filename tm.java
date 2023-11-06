@@ -3,6 +3,37 @@ import java.util.Scanner;
 public class tm {
 
     public static void main(String[] args) {
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         final float Start_Fee =  (float)10.20;
         final float Price_Per_KM = (float) 1.30;
         final float Price_Per_Luggage = (float) 2.50;

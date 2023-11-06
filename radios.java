@@ -8,9 +8,13 @@ public static void ex1() {
     double hekef =  2 * 3.14 * radios;
     System.out.println("your hekef is "+ hekef);
     System.out.println("your area is "+ area);
+    s.close();
 } 
+
 
 public static void main(String[] args){
     ex1();
 }
+
+
 }

@@ -15,10 +15,6 @@ public class oz {
     double cups = answer / 36;
     
     String gatorade = decimalFormat.format(cups);
-    System.out.println("You need to use "+ gatorade+" cups of gatorade!!");
-    idk.close();
-   } 
+    System.out.println("You need to use "+ gatorade+ "cups");
+   }
 }
-
-
-
