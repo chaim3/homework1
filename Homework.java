@@ -27,11 +27,17 @@ public static void Travel() {
     }
 //Radius
 public static void Radius() {
+        DecimalFormat d = new DecimalFormat("#.##");
         Scanner y= new Scanner(System.in);
-        System.out.println( "what is the radius");    
+        System.out.println( "what is the radius?");    
         double radius = y.nextDouble();
-        double shetach =  (3.14 * radius * radius);
-        System.out.println("your hekef is "+2*3.14*radius);
+        
+        double s =  3.14 * radius * radius;
+        String shetach = d.format(s);
+        
+        double h = 2*3.14*radius;
+        String hekef = d.format(h);
+        System.out.println("your hekef is "+hekef);
         System.out.print("your shetach is "+ shetach + "\n");
         y.close(); 
 
@@ -55,7 +61,7 @@ public static void breadShop() {
 
     // List<String> toppings = new ArrayList<String>();
 
-    loop: for(int i=0; i<=4; i++) {
+    loop: for(int i=0; i<=8; i++) {
 
 
       System.out.println("Enter Topping: ");
@@ -82,14 +88,14 @@ public static void breadShop() {
         break loop;
 
         default:
-            System.out.println("\n" + topping + " is not an option.\n");
-
+            System.out.println("\n" + topping + " is not an option.\n" );
+          
       } // End Switch
     }  // End Loop
 
     s.close();
 
-    System.out.println("That will cost you: "+ Breadcost);
+    System.out.println("That will cost you: $"+ Breadcost);
 
 
 }
@@ -97,10 +103,10 @@ public static void breadShop() {
 //Jumper
 public static void Jumper() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter how far you jumped in meters ");
-        double j1 = s.nextInt();
-        double j2 = s.nextInt();
-        double j3 = s.nextInt();
+        System.out.println("Enter how far you jumped in meters all 3 times:");
+        double j1 = s.nextDouble();
+        double j2 = s.nextDouble();
+        double j3 = s.nextDouble();
         double average = (j1 + j2 + j3) / 3;
         if(average > 5){
             System.out.println("You passed");
@@ -114,21 +120,21 @@ public static void Jumper() {
 //Candy    
 public static void Candy(){
         Scanner s = new Scanner(System.in);
-        System.out.println("How many packages do you have with 11 candies");
+        System.out.println("How many packages do you have with 11 candies?");
         int p11 = s.nextInt();
-        System.out.println("How many packages do you have with 25 candies");
+        System.out.println("How many packages do you have with 25 candies?");
         int p25 = s.nextInt();
-        System.out.println("How many kids are their");
+        System.out.println("How many kids are there?");
         int kids = s.nextInt();
         double answer = p11 * 11 + p25 * 25 ;
         kids *= kids;
         int left = (int)answer - kids;
         if(answer > kids){
-            System.out.println("You have enough candy for evryone!:");
-            System.out.println("You have "+ left +"left");
+            System.out.println("You have enough candy for evryone!");
+            System.out.println("You have "+ left +" candy's left!");
         }
         else{
-            System.out.println("You dont have enough candy");
+            System.out.println("You dont have enough candy:(");
         }
         s.close();
 }
@@ -137,9 +143,9 @@ public static void Candy(){
 public static void Buses(){
         Scanner s = new Scanner(System.in);
         DecimalFormat d = new DecimalFormat("#");
-        System.out.println(" Welcome to chaim's buses our buses can hold 51 people \n How many kids do you have? ");
+        System.out.println(" Welcome to chaim's buses our buses can hold 51 people!! \n How many kids do you have? ");
         double kids = s.nextDouble();
-        System.out.println("How many teachers ");
+        System.out.println("How many teachers do you have?");
         double teachers = s.nextDouble();
         double amount = teachers + kids;
         double buses = amount / 51;
@@ -160,10 +166,10 @@ public static void Lottery(){
           System.out.println("You won 111 NIS!!");
       }
       else if(lot == 33){
-          System.out.println("You won 251 NIS");
+          System.out.println("You won 251 NIS!!");
       }
       else{
-        System.out.println("You lost");
+        System.out.println("You lost, better luck next time.");
       }
     s.close();
     }
