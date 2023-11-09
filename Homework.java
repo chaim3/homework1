@@ -159,13 +159,13 @@ public static void Buses(){
 //Lottery
 public static void Lottery(){
       Scanner s = new Scanner(System.in);
-      System.out.println("What is the last 2 digits of your lottery ticket:");
+      System.out.println("What is your lottery ticket number:");
       int lot = s.nextInt();
-
-      if(lot == 25){
+      double l = lot % 100;
+      if(l == 25){
           System.out.println("You won 111 NIS!!");
       }
-      else if(lot == 33){
+      else if(l == 33){
           System.out.println("You won 251 NIS!!");
       }
       else{
@@ -173,16 +173,39 @@ public static void Lottery(){
       }
     s.close();
     }
-//To use the code;'lkpjm'    
+//To use the code;    
 public static void main(String[] args) {
-    //Travel();
-    //Radius();
-    //breadShop();
+    Scanner s = new Scanner(System.in);
+    System.out.println("What code do you want to use?");
+    //The code
+    System.out.println("\n- Travel\n- Radius\n- Breadshop\n- Jumper\n- Candy\n- Buses\n- Lottery:");
+    String code = s.next().toLowerCase();
 
-    //Jumper();
-    //Candy();
-    //Buses();
-    //Lottery();
+   switch(code){
+        case("travel"):
+        Travel();
+        break;
+        case("radius"):
+        Radius();
+        break;
+        case("breadShop"):
+        breadShop();
+        break;
+        case("jumper"):
+        Jumper();
+        break;
+        case("candy"):
+        Candy();
+        break;
+        case("buses"):
+        Buses();
+        break;
+        case("lottery"):
+        Lottery();
+        break;
+    }
+    
+    s.close(); 
 
 }
 }

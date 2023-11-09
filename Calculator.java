@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class idc{
+public class Calculator{
     public static void main(String[] args) {
     
         int result = 0;
