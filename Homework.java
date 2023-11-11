@@ -61,7 +61,7 @@ public static void breadShop() {
 
     // List<String> toppings = new ArrayList<String>();
 
-    loop: for(int i=0; i<=8; i++) {
+    loop: for(int i=0; i<4; i++) {
 
 
       System.out.println("Enter Topping: ");
@@ -88,7 +88,7 @@ public static void breadShop() {
         break loop;
 
         default:
-            System.out.println("\n" + topping + " is not an option.\n" );
+            System.out.println("\n" + topping + " is not an option.\n" );--i;
           
       } // End Switch
     }  // End Loop
@@ -151,7 +151,13 @@ public static void Buses(){
         double buses = amount / 51;
         buses = Math.ceil(buses);
         String b = d.format(buses);
-        System.out.println("You need "+ b +" bus:");
+        
+        if(buses == 1){
+        System.out.println("You need "+ b +" bus.");    
+        }
+        else{
+            System.out.println("You need "+ b +" buses.");
+        }
         s.close();
 
     }
@@ -176,35 +182,42 @@ public static void Lottery(){
 //To use the code;    
 public static void main(String[] args) {
     Scanner s = new Scanner(System.in);
-    System.out.println("What code do you want to use?");
+    
+    
+    loop: for(int i = 0; i<3; ++i){
+    System.out.println("What code do you want to use?");    
     //The code
-    System.out.println("\n- Travel\n- Radius\n- Breadshop\n- Jumper\n- Candy\n- Buses\n- Lottery:");
-    String code = s.next().toLowerCase();
-
-   switch(code){
+        System.out.println("\n- Travel\n- Radius\n- Breadshop\n- Jumper\n- Candy\n- Buses\n- Lottery:");
+    String code = s.next().toLowerCase();    
+    
+    switch(code){
         case("travel"):
         Travel();
-        break;
+        break loop;
         case("radius"):
         Radius();
-        break;
-        case("breadShop"):
+        break loop;
+        case("breadshop"):
         breadShop();
-        break;
+        break loop;
         case("jumper"):
         Jumper();
-        break;
+        break loop;
         case("candy"):
         Candy();
-        break;
+        break loop;
         case("buses"):
         Buses();
-        break;
+        break loop;
         case("lottery"):
         Lottery();
+        break loop;
+        //if none of the answers above work print this:
+        default:
+        System.out.println("\n"+code+" is not an option try again.");
         break;
     }
-    
+}
     s.close(); 
 
 }
