@@ -63,7 +63,7 @@ public static void odd(){
         double num = s.nextDouble();
         System.out.println("");
         //for
-        for (double i = 0; i <= num; i++){
+        for (double i = 1; i <= num; i++){
         
         if(i % 7 == 0)
             System.out.println("boom");

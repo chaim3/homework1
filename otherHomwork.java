@@ -84,7 +84,22 @@ public class otherHomwork {
         }
         s.close();
     }
+    public static void sumFive() {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Print a number from 1 - 99");
+        int num = s.nextInt();
+        
+        for(int i = 0; i < num; ++i){
+         if((i % 10) + (i / 10 % 10) < 5 && i % 3 == 0){
+            System.out.println(i);
+         }
+         else{
+            System.out.println("j");
+         }
+        }
+        
+    }
     public static void main(String[] args) {
-        ifNum();
+        sumFive();
     }
 }
