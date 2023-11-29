@@ -61,7 +61,30 @@ public class otherHomwork {
         System.out.println("Its not equal");
         s.close();
     }
+    public static void uperOrLower(){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a letter");
+        char letter = s.next().charAt(0);
+        if(letter>='a' && letter <= 'z')
+        System.out.println("Its lower case");
+        else
+        System.out.println("Its upper case");
+        s.close();
+        
+    }
+    public static void ifNum(){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Write a number");
+        char num = s.next().charAt(0);
+        if(num > 47 && num < 57){
+            System.out.println("Its a number");
+        }
+        else{
+            System.out.println("Its not a num");
+        }
+        s.close();
+    }
     public static void main(String[] args) {
-        bigger();
+        ifNum();
     }
 }
