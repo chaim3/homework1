@@ -23,12 +23,6 @@ public class main{
             System.out.println("**********");
             }
             s.close();
-            
-
-
-        
-
-
+        }
     }
-}
 }
