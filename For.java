@@ -40,22 +40,7 @@ public static void odd(){
 
     System.out.println("You have "+ j +" that is devisible by three");
 }
-    public static void DThree(){
-         Scanner s = new Scanner(System.in);
-        
-        System.out.println("Enter a number");
-        double num = s.nextDouble();
-        
-        for (double i = num; i >= 0; i--){
-        
-        if(i % 3 == 0){
-            System.out.println(i);
-        }
-        
-        
-    }
 
-    }
     public static void Boom(){
         Scanner s = new Scanner(System.in);
     
@@ -74,8 +59,37 @@ public static void odd(){
         
     }
 }
+public static void sumFive() {
+    Scanner s = new Scanner(System.in);
+    System.out.println("Print a number from 1 - 99");
+    float num = s.nextFloat();
+    
+    for(float i = 0; i < num; ++i){
+     if((i % 10) + (i / 10 % 10) < 5 && i % 3 == 0){
+        System.out.printf("%f2",i);
+     }
+   
+    }
+    
+}
+    public static void DThree(){
+         Scanner s = new Scanner(System.in);
+        
+        System.out.println("Enter a number");
+        double num = s.nextDouble();
+        
+        for (double i = num; i >= 0; i--){
+        
+        if(i % 3 == 0){
+            System.out.println(i);
+        }
+        
+        
+    }
+    
 
+    }
     public static void main(String[]args){
-        Boom();
+        sumFive();
     }
 }
