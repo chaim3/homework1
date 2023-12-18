@@ -4,8 +4,8 @@ public class While {
     public static void Average_grade(){
         Scanner s = new Scanner(System.in);
         DecimalFormat d = new DecimalFormat("#.##");
-        double count = 0, g, grade = 0,average;
-        g = 0;
+        double count = 0, g = 0, grade = 0,average;
+       
         while(g != -1){
             count++;
             System.out.println("What is your final grade");
@@ -24,21 +24,22 @@ public class While {
     }
     public static void Basketball(){
         Scanner s = new Scanner(System.in);
-        int count = 0, h;
-        h = 0;
+        int count = 0, h = 0;
+        
         while(h != -1){
-           System.out.println("What is your height in cm? /nwrite -1 when done."); 
+           System.out.println("What is your height in cm? /n write -1 when done."); 
            h = s.nextInt();
             if(h >= 170 && h <= 180)
             count ++;
         
             }
             System.out.println("you have "+ count +" player of valid height");
-           
+             
         }
 
+
     public static void main(String[] args) {
-        Basketball();
+        Average_grade();
     }
     
 }
