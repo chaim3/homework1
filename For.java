@@ -86,10 +86,37 @@ public static void sumFive() {
         
         
     }
+}
+    public static void pTable(){
+     Scanner s = new Scanner(System.in);
+     int num;
+     do{
+        System.out.println("write a number from 5 - 10:");
+         num = s.nextInt();
+        if (num>=5 && num <=10) {
+            
+        
+         for (int i = 1; i <= num; i++){
+           
+            for(int j = 1; j <= num; j++){
+            System.out.print(i*j+"\t");
+        }
+        System.out.println();
+    }
+     System.out.println("Enjoy your periodic table!!");
+}
+else{
+    System.out.println("not an option");
+}
+    }while(num>=5 && num <=10);{
+        
+    }
+     
+    }
     
 
-    }
+    
     public static void main(String[]args){
-        sumFive();
+        pTable();
     }
 }

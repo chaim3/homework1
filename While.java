@@ -36,10 +36,37 @@ public class While {
             System.out.println("you have "+ count +" player of valid height");
              
         }
+        public static void Test(){
+            Scanner s =  new Scanner(System.in);
+            int count = 0, num1,num2;
+            double mana, big = 0;
+            do{
+                System.out.println("what is num1?");
+                num1 = s.nextInt();
+                System.out.println("what is num2?");
+                num2 = s.nextInt();
+                count++;
+                System.out.println("The sum is "+ num1 + num2);
+                if(num2 == 0 ){
+                    System.out.println("indivisible");
+                }
+                else{
+                    System.out.println("The division is" + (double) num1/num2);
+                    mana = s.nextDouble();
+                    if(mana>big){
+                        big = mana; 
+                    }
+
+                }
+
+            }while(count < 30);{
+                System.out.println(big);
+            }
+        }
 
 
     public static void main(String[] args) {
-        Average_grade();
+        Test();
     }
     
 }
