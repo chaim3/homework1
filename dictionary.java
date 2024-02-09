@@ -1,7 +1,7 @@
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.Scanner;
-public class tehilim {
+public class dictionary {
     public static void main(String[] args){
 Scanner s = new Scanner(System.in);
 System.out.println("which one?");
@@ -21,7 +21,7 @@ Dictionary d = new Hashtable();
  d.put(129,"short");
  d.put(130,"short");
  d.put(131,"short");
-  d.put(132,"short");
+ d.put(132,"short");
  d.put(133,"short");
  d.put(134,"short");
  d.put(135,"short");

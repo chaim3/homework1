@@ -11,7 +11,7 @@ public class oz {
     double answer = leaters * 33.814;
     //to make sure their are 2 numbes after answer
  String formattednum=decimalFormat.format(answer);
-    System.out.println("You have "+ formattednum+" ounces");
+    System.out.println("You have "+formattednum+" ounces");
     double cups = answer / 36;
     
     String gatorade = decimalFormat.format(cups);
