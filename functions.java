@@ -4,9 +4,6 @@ import java.util.Random;
         public static int fgh(int x,int y){
             int sum = x + y;
             return sum;
-            
-            
-            
         }
         public static int sumOfThreeNums(int x){
             int sum = (x%10) + (x/10%10)+(x/100);
